@@ -58,6 +58,7 @@ Clone the repository to get started:
 ```bash
 git clone https://github.com/Mariam-Ghamgui/blog-app-CICD-EKS.git
 cd blog-app-CICD-EKS
+```
 
 ## 2. Install Dependencies 🔌
 
@@ -65,16 +66,19 @@ To set up the required tools for the pipeline, run these scripts:
 
 ### Jenkins Setup:
 ```bash
-./ci-scripts/install_jenkins.sh
+./ci-scripts/install_jenkins.sh 
+```
 
 ### Docker Setup:
 ```bash
 ./ci-scripts/install_docker.sh
+```
 
 ### Prometheus & Grafana Setup:
 ```bash
 ./ci-scripts/install_prometheus.sh
 ./ci-scripts/install_grafana.sh
+```
 
 ## 3. Set up Kubernetes (EKS) 🌐
 
@@ -83,11 +87,13 @@ Provision the EKS cluster with Terraform:
 cd terraform
 terraform init
 terraform apply --auto-approve
+```
 
 Once the infrastructure is set, deploy Kubernetes resources:
 ```bash
 kubectl apply -f kubernetes/deployment.yml
 kubectl apply -f kubernetes/service.yml
+```
 
 4. Access the Application 🖥️
 
@@ -130,18 +136,22 @@ We welcome contributions! To contribute, follow these steps:
 2. Clone your fork locally:
 ```bash
 git clone https://github.com/yourusername/blog-app-CICD-EKS.git
+```
 
 3. Create a new branch:
 ```bash
 git checkout -b feature-branch
+```
 
 4. Make changes and commit them:
 ```bash
 git commit -m "Add new feature or fix"
+```
 
 5. Push your changes:
 ```bash
 git push origin feature-branch
+```
 
 6. Open a pull request with a detailed description of your changes. 
 
