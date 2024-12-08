@@ -76,8 +76,8 @@ To set up the required tools for the pipeline, run these scripts:
 
 ### Prometheus & Grafana Setup:
 ```bash
+./ci-scripts/install_blackbox.sh
 ./ci-scripts/install_prometheus.sh
-./ci-scripts/install_grafana.sh
 ```
 
 ## 3. Set up Kubernetes (EKS) 🌐
@@ -92,7 +92,6 @@ terraform apply --auto-approve
 Once the infrastructure is set, deploy Kubernetes resources:
 ```bash
 kubectl apply -f kubernetes/deployment.yml
-kubectl apply -f kubernetes/service.yml
 ```
 
 4. Access the Application 🖥️
@@ -155,4 +154,6 @@ git push origin feature-branch
 
 6. Open a pull request with a detailed description of your changes. 
 
- 
+## License 📜
+
+This project is licensed under the MIT License - see the LICENSE file for details.
