@@ -32,6 +32,8 @@ This repository provides the complete infrastructure for a CI/CD pipeline that a
 
 ## Pipeline Architecture 🏗️
 
+![CI/CD Pipeline Architecture](./Architecture.png)
+
 The CI/CD pipeline consists of the following stages:
 
 1. **Code Checkout & Build**:
